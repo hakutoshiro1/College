@@ -1,0 +1,63 @@
+Circuit switching concepts:
+	A network built around single circuit switching node consists of collection of stations attached to 
+	central switching unit.
+	Central switch establishes dedicated path between any two devices that wish to communicate.
+	IMPORTANT ELEMENTS OF SINGLE CIRCUIT SWITCHING NODE:
+	1)Digital switch:	Provides transparent path between any two pair of connected/attached devices.
+							Transparent path:It means that it appears to have direct connection between two 
+							attached devices.
+						The connection is Full-Duplex.
+	2)Network Interface:	Represents the functions and hardware needed to connect digital devices to
+							network.eg:-digital telephones,analog telephones(if network interface contains
+							logic of converting analog signals to digital signals).
+							Trunks to other digital switches carry TDM signals and provide links for 
+							constructing multiple-node networks.
+	3)Control Unit:    Performs three general tasks:
+							(i)Establishing connections.(generally done on demand/request of attached
+							 devices.)
+							 		To establish connection,control unit must handle and acknowledge the 
+							 		request,determine if intended destination is free,and construct path
+							 		through switch. 
+							(ii)Maintain the established connections.
+									The digital switch uses time division principles,this may require 
+									ongoing manipulation of the switching elements.However,the bits of the
+									communication are transferred transparantly.
+							(iii)Must be able to teardown connection on request of one of parties/for its 
+								own reasons.
+	Blocking:- blocking occurs when network is unable to connect two stations as all possible paths between
+				them are already in use.
+	Non-Blocking :- Permits all stations to be connected(in pairs) at once as long as the called party is 
+					free.
+	Space Division switching :-
+PACKET-SWITCHING NETWORKS:
+	I)DATAGRAM NETWORKS:
+		*In data communication we need to send messages from one devices to another,if the message is 
+		to be sent  by 	packet-switched networking ,then the message has to be partitioned 
+		into 	packets 
+		of fixed or variable size.
+		*Size is determined by Network and governing protocol.
+		*No resource-reservation as in circuit switched network.
+		*Resources are allocated on demand.
+		*Switch in datagram network uses routing table that is based on the address of destination.
+		*The destination address in header of packets of datagram network remains same throughout 
+		the journey of packet.
+		*Switching at the Internet is done by datagram approach of switching at network layer.
+	II)VIRTUAL CIRCUIT SWITCHING NETWORK :
+		*A virtual circuit network is cross of circuit-network and datagram-network.If has some
+		characteristics of both networks.
+			*As in circuit switched network,this network has setup and teardown phases in addition to data
+			transfer phase.
+			*Resources can be allocated as in circuit switched network or can be allocated on demand as in
+			datagram network.	
+			*As in datagram network, data are packetised and each packet has address of destination in its 
+			header ,but the address in header has local jurisdiction (address of next switch and channel on 
+			which it is being carried.) ,not end-to-end jurisdiction(address of destination station).
+			*As in circuit switched network,all packets follow the same path that is established during
+			connection.
+			*Virtual circuit network implemented during data link layer,
+			Circuit switched network impements in physical layer and 
+			Datagram network implements in network layer.
+			but it may change in future.
+			*A source or destination can be any device that connects other networks.
+			eg:-computer ,packet,switch,etc.
+			
