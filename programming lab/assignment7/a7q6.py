@@ -1,5 +1,0 @@
-initialcount=int(input("Initial Number of Organisms:"))
-rate=int(input("Enter Rate of growth:"))
-ach=int(input("Number of hours it takes to achieve this rate:"))
-time=int(input("Number of hours for which population grows:"))
-print("Population of Organisms after time ends:",int(initialcount*rate*time/ach))
