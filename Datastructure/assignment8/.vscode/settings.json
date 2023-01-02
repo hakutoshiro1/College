@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "bit": "cpp",
-        "*.tcc": "cpp",
-        "bitset": "cpp",
-        "limits": "cpp",
-        "valarray": "cpp"
-    }
-}
